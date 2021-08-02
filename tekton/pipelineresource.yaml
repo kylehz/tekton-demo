@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: kylehz-tekton-example
+spec:
+  type: git
+  params:
+    - name: url
+      value: https://github.com/kylehz/tekton-demo.git
+    - name: revision
+      value: master
